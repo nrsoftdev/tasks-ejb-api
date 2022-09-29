@@ -3,7 +3,7 @@ package nrsoft.tasks.ejb;
 
 import java.util.List;
 
-import javax.ejb.Local;
+import jakarta.ejb.Local;
 
 import nrsoft.tasks.dto.ProcessDefinitionDTO;
 import nrsoft.tasks.dto.TaskDefinitionDTO;
@@ -20,7 +20,11 @@ public interface TaskDefinition {
 	
 	List<TaskDefinitionDTO> searchTaskDefinitionList( String name, String description, String className, int pageNum, int pageSize);
 	
-	TaskDefinitionDTO saveTaskDefinition(TaskDefinitionDTO taskDefinition);
+	TaskDefinitionDTO createTaskDefinition(TaskDefinitionDTO taskDefinitionDTO);
+	
+	TaskDefinitionDTO updateTaskDefinition(TaskDefinitionDTO taskDefinitionDTO);
+	
+	TaskDefinitionDTO updateTaskDefinitionProperties(TaskDefinitionDTO taskDefinitionDTO);
 
 	TaskDefinitionDTO getTaskDefinition(long taskId);
 
@@ -36,5 +40,7 @@ public interface TaskDefinition {
 	TaskDefinitionDTO addChildrenTaskDefinition(long parentTaskId, TaskDefinitionDTO taskDefinition);
 
 	boolean detachChildrenTaskDefinition(long parentTaskId, long childTaskId);
+	
+	boolean attachChildrenTaskDefinition(long parentTaskId, long childTaskId);
 
 }

@@ -1,15 +1,13 @@
 package nrsoft.tasks.ejb;
 
-
 import java.util.List;
 
-import jakarta.ejb.Local;
-
+import jakarta.ejb.Remote;
 import nrsoft.tasks.dto.TextConnectorDTO;
 
-@Local
-public interface TextConnector {
-	
+
+@Remote
+public interface TextConnectorRemote {
 	List<TextConnectorDTO> getTextConnectorList();
 	
 

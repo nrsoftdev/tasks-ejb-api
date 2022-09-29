@@ -3,8 +3,8 @@ package nrsoft.tasks.ejb;
 
 import java.util.List;
 
-import javax.ejb.Asynchronous;
-import javax.ejb.Local;
+import jakarta.ejb.Asynchronous;
+import jakarta.ejb.Local;
 
 import nrsoft.tasks.TaskResult;
 import nrsoft.tasks.dto.ProcessDTO;

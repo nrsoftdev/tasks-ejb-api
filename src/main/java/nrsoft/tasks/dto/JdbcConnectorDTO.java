@@ -53,13 +53,13 @@ public class JdbcConnectorDTO {
 	/**
 	 * @return the user
 	 */
-	public String getDBUser() {
+	public String getDbuser() {
 		return dbuser;
 	}
 	/**
 	 * @param user the user to set
 	 */
-	public void setDBUser(String dbuser) {
+	public void setDbuser(String dbuser) {
 		this.dbuser = dbuser;
 	}
 	/**
