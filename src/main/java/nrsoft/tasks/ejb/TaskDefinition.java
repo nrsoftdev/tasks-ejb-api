@@ -15,9 +15,6 @@ public interface TaskDefinition {
 	
 	List<TaskDefinitionDTO> getTaskDefinitionList(int pageNum, int pageSize);
 	
-	
-	List<TaskDefinitionDTO> searchTaskDefinitionList( String name, String description, String className);
-	
 	List<TaskDefinitionDTO> searchTaskDefinitionList( String name, String description, String className, int pageNum, int pageSize);
 	
 	TaskDefinitionDTO createTaskDefinition(TaskDefinitionDTO taskDefinitionDTO);

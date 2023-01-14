@@ -25,4 +25,6 @@ public interface Process {
 
 	ProcessDTO getProcessResult(String processId);
 
+	List<ProcessDTO> getList(String owner, int pageNum, int pageSize);
+
 }
